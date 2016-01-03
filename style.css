@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+}
+.nav > button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    border: none;
+    background-color: #eee;
+}
+.nav > button.left {
+    left: 0;
+}
+.nav > button.right {
+    right: 0;
+}
+.nav > .title {
+    font-size: 2em;
+    line-height: 50px; /* match .nav height */
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin: 0px 50px;
+}
+#container {
+    font-size: 0; /* horrible hack to remove whitespace */
+    white-space: nowrap;
+    height: 100%;
+}
+.screen {
+    font-size: 30pt;
+    margin-top: 50px;
+    white-space: normal;
+    overflow-y: scroll;
+    width: 100%;
+    height: 80%;
+    vertical-align: top;
+    display: inline-block;
+}
